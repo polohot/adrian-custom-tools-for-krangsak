@@ -22,6 +22,7 @@ out_base.mkdir(parents=True, exist_ok=True)
 
 # --- iLovePDF ---
 public_key = os.environ.get('ILOVEAPI_PUBLIC_KEY')
+st.write(public_key)
 ilovepdf = ILovePdf(public_key, verify_ssl=False)
 
 # --- Uploader (multiple) ---
